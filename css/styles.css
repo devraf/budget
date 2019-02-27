@@ -1,0 +1,168 @@
+ /* #fb8122 #1d2228 #e1e2e2 */
+
+body {
+  font-family: zen-new, sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  background-color: rgba(29, 34, 40, 1);
+}
+header {
+  /* border-bottom: 2px solid rgba(225, 226, 226, 1); */
+  margin-bottom: 15px;
+  padding-left: 5px;
+  background-color: rgba(251, 129, 34, 1);
+  padding: 5px 0px;
+}
+
+header h1 {
+
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+input {
+  -webkit-appearance: none;
+  border-style: none;
+  outline: none;
+  border-bottom: 2px solid rgba(225, 226, 226, 1);
+  background-color: rgba(39, 44, 49, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+  margin-left: 5px;
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+figcaption {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid rgba(251, 129, 34, 1);
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0px;
+}
+
+.worksheet {
+  margin: 0px 15px;
+}
+
+.balance {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.name-input {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.amount-input {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 100px 215px 1fr;
+}
+
+.add-debt button {
+  border: none;
+  background-color: rgba(75, 200, 75, 1);
+  border-radius: 3px;
+  height: 35px;
+  width: 35px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0;
+}
+
+.add-debt button:hover {
+  background-color: rgba(75, 240, 75, 1);
+  transition: .3s;
+}
+
+.balance-expense-information {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin: 0px 10px 25px 10px;
+}
+
+.balance-expense-information figcaption {
+  grid-column: 1 / 3;
+}
+
+.balance-expense-information p {
+  padding-bottom: 15px;
+}
+
+.totals {
+  font-size: 1.75rem;
+}
+
+meter {
+  border-radius: 5px;
+}
+
+.debt-list-section {
+  margin: 0px 15px;
+}
+
+.debt-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr) );
+  grid-column-gap: 20px;
+}
+
+.debt-list-item {
+  display: grid;
+  grid-template-columns: 8fr 3.5fr .5fr;
+  margin: 0px 5px 10px 5px;
+  /* border-bottom: 3px solid rgba(251, 129, 34, 1); */
+  background-color: rgba(39, 44, 50, 1);
+  color: rgba(255,255, 255, 1);
+  padding: 15px;
+  font-size: 1.25rem;
+}
+
+.debt-list-item:nth-child(even) {
+  /* border-bottom: 3px solid rgba(251, 129, 34, 1); */
+  background-color: rgba(49, 54, 60, 1);
+}
+
+.debt-list-item button {
+  border: none;
+  background-color: rgba(200, 50, 50, 1);
+  border-radius: 3px;
+  height: 23px;
+  width: 23px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: .7rem;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.debt-list-item button:hover {
+  background-color: rgba(200, 100, 100, 1);
+  transition: .5s;
+}
