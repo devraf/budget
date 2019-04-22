@@ -41,6 +41,7 @@ const app = {
       // app.addLiElementToDebtAmountFigure()
       app.totalDebtAmount()
       app.updateCurrentBalance()
+      app.focusOnNewExpenseInput()
     })
   },
   //used to keep track of tatal debt amount
@@ -93,7 +94,7 @@ const app = {
   },
   //New View section thats adds debt name / name input / amount / amount input / edit delete buttons
 
-  //starts the app on page load
+  //starts the app
   init: () => {
     app.setBeginningBalance()
     app.addDebtItemToList()
@@ -167,6 +168,11 @@ const app = {
         }
       }
     })
+  },
+  focusOnNewExpenseInput: () => {
+    app.debtNameInput.value = ''
+    app.debtAmountInput.value = ''
+    app.debtNameInput.focus()
   }
   //TODO
     //update the current balance when user deletes a debt item

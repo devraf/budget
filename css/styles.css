@@ -1,15 +1,14 @@
- /* #fb8122 #1d2228 #e1e2e2 */
-
-body {
+ body {
   font-family: zen-new, sans-serif;
   font-weight: 300;
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 1);
-  margin: 0;
+  margin: 0 auto;
   background-color: rgba(29, 34, 40, 1);
+  max-width: 600px;
+
 }
 header {
-  /* border-bottom: 2px solid rgba(225, 226, 226, 1); */
   margin-bottom: 15px;
   padding-left: 5px;
   background-color: rgba(251, 129, 34, 1);
@@ -53,6 +52,7 @@ li {
 figcaption {
   color: white;
   font-size: 1.5rem;
+  font-weight: 600;
   padding: 0px 0px 10px 0px;
   border-bottom: 2px solid rgba(251, 129, 34, 1);
   margin-bottom: 15px;
@@ -63,12 +63,13 @@ p {
 }
 
 .worksheet {
-  margin: 0px 15px;
+  margin: 0px 15px 25px 15px;
 }
 
 .balance {
   display: grid;
   grid-template-columns: 100px 1fr;
+  margin: 0 0 0 5px;
 }
 
 .name-input {
@@ -81,6 +82,10 @@ p {
   margin: 0px;
   display: grid;
   grid-template-columns: 100px 215px 1fr;
+}
+
+.add-debt {
+  margin: 0 0 0 5px;
 }
 
 .add-debt button {
@@ -104,7 +109,8 @@ p {
 .balance-expense-information {
   display: grid;
   grid-template-columns: 200px 1fr;
-  margin: 0px 10px 25px 10px;
+  margin: 0px 15px 25px 15px;
+  
 }
 
 .balance-expense-information figcaption {
@@ -113,6 +119,7 @@ p {
 
 .balance-expense-information p {
   padding-bottom: 15px;
+  margin: 0 0 0 5px;
 }
 
 .totals {
