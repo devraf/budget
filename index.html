@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.typekit.net/ofm5rzr.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Quick Expense Tracker</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://use.typekit.net/ofm5rzr.css">
-  <link rel="stylesheet" href="https://github.com/devraf/budget/blob/master/css/styles.css">
-  <title>Quick Expense Tracker</title>
-</head>
-
-<body>
-  <header>
-    <h1>Xpnsr</h1>
-  </header>
-  <main>
-    <figure class="worksheet">
-      <figcaption>Balance & Expense Input</figcaption>
-    <form class="balance">
-      <label for="starting-balance">Balance</label>
-      <input type="number" name="starting-balance" value="" step="0.01" required placeholder="0.00">
-    </form>
-    <form class="add-debt">
-      <figure class="name-input">
-        <label for="debt-name">Expense</label>
-        <input type="text" name="debt-name" value="" required placeholder="Name">
+  <body>
+    <header>
+      <h1>Xpnsr</h1>
+    </header>
+    <main>
+      <figure class="worksheet">
+        <figcaption>Balance & Expense Input</figcaption>
+        <form class="balance">
+          <label for="starting-balance">Balance</label>
+          <input
+            type="number"
+            name="starting-balance"
+            value=""
+            step="0.01"
+            required
+            placeholder="0.00"
+          />
+        </form>
+        <form class="add-debt">
+          <figure class="name-input">
+            <label for="debt-name">Expense</label>
+            <input
+              type="text"
+              name="debt-name"
+              value=""
+              required
+              placeholder="Name"
+            />
+          </figure>
+          <figure class="amount-input">
+            <label for="debt-amount">Amount</label>
+            <input
+              type="number"
+              name="debt-amount"
+              value=""
+              step="0.01"
+              required
+              placeholder="0.00"
+            />
+            <button type="button" name="add-debt-item">+</button>
+          </figure>
+        </form>
       </figure>
-      <figure class="amount-input">
-      <label for="debt-amount">Amount</label>
-      <input type="number" name="debt-amount" value="" step="0.01" required placeholder="0.00">
-      <button type="button" name="add-debt-item">+</button>
-    </figure>
-    </form>
-    </figure>
-    <figure class="balance-expense-information">
-      <figcaption>Totals</figcaption>
-      <p>Remaining Balance</p>
-      <p class="beginning-balance totals">0.00</p>
-      <p>Expense Total</p>
-      <p class="total-expense totals">0.00</p>
-      <p>Expense Count</p>
-      <p class="expense-count totals">0</p>
-    </figure>
-    <figure class="debt-list-section">
-      <figcaption>Expense List</figcaption>
-      <ul class="debt-list">
-      </ul>
-    </figure>
-  </main>
-  <script src="https://github.com/devraf/budget/blob/master/js/app.js"></script>
-</body>
-
+      <figure class="balance-expense-information">
+        <figcaption>Totals</figcaption>
+        <p>Remaining Balance</p>
+        <p class="beginning-balance totals">0.00</p>
+        <p>Expense Total</p>
+        <p class="total-expense totals">0.00</p>
+        <p>Expense Count</p>
+        <p class="expense-count totals">0</p>
+      </figure>
+      <figure class="debt-list-section">
+        <figcaption>Expense List</figcaption>
+        <ul class="debt-list"></ul>
+      </figure>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
 </html>
